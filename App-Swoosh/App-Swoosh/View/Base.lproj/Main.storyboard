@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HrB-ql-P51"/>
+                                    <segue destination="e8C-oY-13j" kind="show" identifier="s1" id="cLa-gR-UQw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sA-ZQ-Zf6">
@@ -187,6 +187,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="e8C-oY-13j" eventType="touchUpInside" id="06z-ii-4Ir"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbQ-bd-b2x">
                                 <rect key="frame" x="10" y="50" width="40" height="30"/>
@@ -196,7 +199,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="backButton"/>
                                 <connections>
-                                    <action selector="unwindFromSkillVCWithUnwindSegue:" destination="e8C-oY-13j" eventType="touchUpInside" id="32d-0f-8CR"/>
+                                    <action selector="unwindFromSkillVCWithUnwindSegue:" destination="e8C-oY-13j" eventType="touchUpInside" id="nz3-VR-EyA"/>
                                     <action selector="unwindFromSkillVCWithUnwindSegue:" destination="aZe-L6-ZzE" eventType="touchUpInside" id="vAa-Mx-f9d"/>
                                 </connections>
                             </button>
@@ -221,6 +224,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PUZ-gK-AeU"/>
                     </view>
+                    <connections>
+                        <segue destination="9et-b1-WLX" kind="show" identifier="s2" id="EA1-Q3-WB9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZe-L6-ZzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
