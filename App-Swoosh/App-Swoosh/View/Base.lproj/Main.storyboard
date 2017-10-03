@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="App_Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e8C-oY-13j" kind="show" identifier="s1" id="1a9-Jj-9dZ"/>
+                                    <action selector="onNextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HrB-ql-P51"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sA-ZQ-Zf6">
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="BOg-py-ukR">
             <objects>
-                <viewController id="e8C-oY-13j" customClass="ViewController" customModule="App_Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e8C-oY-13j" customClass="LeagueVC" customModule="App_Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="poF-u0-De0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,10 +139,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GKB-Jl-bQR" userLabel="Stack View 2">
-                                <rect key="frame" x="5" y="204" width="365" height="170"/>
+                                <rect key="frame" x="10" y="204" width="355" height="170"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hq-Dc-YVw" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40317315920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Ka2-gn-EWS"/>
@@ -153,7 +153,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-hk-0wR" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="60" width="365" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="355" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40317315920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="r3k-lP-gCw"/>
@@ -164,7 +164,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z15-by-Man" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="365" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="355" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40317315920000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="By7-9c-tiD"/>
@@ -187,9 +187,6 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9et-b1-WLX" kind="show" identifier="s2" id="ffw-N1-kmc"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbQ-bd-b2x">
                                 <rect key="frame" x="10" y="50" width="40" height="30"/>
@@ -209,13 +206,13 @@
                             <constraint firstItem="PUZ-gK-AeU" firstAttribute="trailing" secondItem="uqU-cK-WXu" secondAttribute="trailing" id="426-VV-uqN"/>
                             <constraint firstItem="PUZ-gK-AeU" firstAttribute="bottom" secondItem="4mQ-KW-fJr" secondAttribute="bottom" constant="50" id="ARA-8F-FOi"/>
                             <constraint firstItem="vhl-jO-jsN" firstAttribute="leading" secondItem="PUZ-gK-AeU" secondAttribute="leading" constant="10" id="AqF-CA-Kz5"/>
-                            <constraint firstItem="GKB-Jl-bQR" firstAttribute="leading" secondItem="PUZ-gK-AeU" secondAttribute="leading" constant="5" id="Je5-JD-Sp9"/>
+                            <constraint firstItem="GKB-Jl-bQR" firstAttribute="leading" secondItem="PUZ-gK-AeU" secondAttribute="leading" constant="10" id="Je5-JD-Sp9"/>
                             <constraint firstItem="uqU-cK-WXu" firstAttribute="leading" secondItem="PUZ-gK-AeU" secondAttribute="leading" id="MSf-Y8-lGm"/>
                             <constraint firstItem="MbQ-bd-b2x" firstAttribute="top" secondItem="poF-u0-De0" secondAttribute="top" constant="50" id="QAw-NX-wB0"/>
                             <constraint firstItem="4mQ-KW-fJr" firstAttribute="trailing" secondItem="PUZ-gK-AeU" secondAttribute="trailing" constant="10" id="Qcv-ix-eap"/>
                             <constraint firstItem="GKB-Jl-bQR" firstAttribute="top" secondItem="vhl-jO-jsN" secondAttribute="bottom" constant="50" id="RHy-2D-pRW"/>
                             <constraint firstItem="PUZ-gK-AeU" firstAttribute="trailing" secondItem="vhl-jO-jsN" secondAttribute="trailing" constant="10" id="UXY-RC-jwY"/>
-                            <constraint firstItem="PUZ-gK-AeU" firstAttribute="trailing" secondItem="GKB-Jl-bQR" secondAttribute="trailing" constant="5" id="VNM-va-Ffq"/>
+                            <constraint firstItem="PUZ-gK-AeU" firstAttribute="trailing" secondItem="GKB-Jl-bQR" secondAttribute="trailing" constant="10" id="VNM-va-Ffq"/>
                             <constraint firstItem="uqU-cK-WXu" firstAttribute="top" secondItem="poF-u0-De0" secondAttribute="top" id="Zcb-Xa-iJd"/>
                             <constraint firstAttribute="bottom" secondItem="uqU-cK-WXu" secondAttribute="bottom" id="ZyT-U3-MnL"/>
                             <constraint firstItem="MbQ-bd-b2x" firstAttribute="leading" secondItem="PUZ-gK-AeU" secondAttribute="leading" constant="10" id="grC-JR-fXN"/>
@@ -229,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="845.60000000000002" y="132.26600985221674"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="bDS-Tw-gIE">
             <objects>
-                <viewController id="9et-b1-WLX" sceneMemberID="viewController">
+                <viewController id="9et-b1-WLX" customClass="SkillVC" customModule="App_Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="koJ-R9-EeS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
