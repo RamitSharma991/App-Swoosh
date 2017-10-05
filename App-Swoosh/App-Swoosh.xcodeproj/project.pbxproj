@@ -49,11 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				314F13CE1F7CF8100034C556 /* UIViews */,
-				314F13BC1F7CF2320034C556 /* AppDelegate.swift */,
-				314F13C01F7CF2320034C556 /* Main.storyboard */,
-				314F13C31F7CF2320034C556 /* Assets.xcassets */,
-				314F13C51F7CF2320034C556 /* LaunchScreen.storyboard */,
-				314F13C81F7CF2320034C556 /* Info.plist */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,9 +91,14 @@
 		314F13BB1F7CF2320034C556 /* App-Swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				314F13BC1F7CF2320034C556 /* AppDelegate.swift */,
+				314F13C01F7CF2320034C556 /* Main.storyboard */,
+				314F13C31F7CF2320034C556 /* Assets.xcassets */,
+				314F13C51F7CF2320034C556 /* LaunchScreen.storyboard */,
+				314F13C81F7CF2320034C556 /* Info.plist */,
 				312139491F83953700EF6D2D /* Model */,
-				312139481F83953400EF6D2D /* Controller */,
 				312139471F83953100EF6D2D /* View */,
+				312139481F83953400EF6D2D /* Controller */,
 			);
 			path = "App-Swoosh";
 			sourceTree = "<group>";

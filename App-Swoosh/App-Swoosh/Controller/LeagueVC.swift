@@ -11,9 +11,9 @@ import UIKit
 class LeagueVC: UIViewController {
 
     @IBOutlet weak var nextBtnOtl: BorderButton!
+    
     var player: Player!
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,12 @@ class LeagueVC: UIViewController {
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            
+            skillVC.player = player
+        }
+    }
     /*
     // MARK: - Navigation
 
