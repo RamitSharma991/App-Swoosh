@@ -14,4 +14,4 @@ A simple way to integrate yourself into the the basketball leagues in the areas 
 
 ![](https://github.com/RamitSharma991/App-Swoosh/blob/HomeScreen-UI-AutoLayout/2.png)
 
-![](https://github.com/RamitSharma991/App-Swoosh/blob/HomeScreen-UI-AutoLayout/1.png)
+[](https://github.com/RamitSharma991/App-Swoosh/blob/HomeScreen-UI-AutoLayout/1.png)
