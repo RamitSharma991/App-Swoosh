@@ -13,7 +13,7 @@ A simple way to integrate yourself into the the basketball leagues in the areas 
 
 2.Refactoring code, Segues,Programmatic-segues
 
-3.IBActions, ,data models and passing data between view controllers
+3.IBActions,data models and passing data between view controllers
 
 
 ### Screenshots (for educational purposes only)
