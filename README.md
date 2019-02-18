@@ -1,4 +1,9 @@
 # App-Swoosh
+
+<p align="center">
+<img src="https://img.shields.io/badge/swift-%204%20%7C%204.2%20-blue.svg" />
+</p>
+
 Basketball in an app for all the basketball enthusiasts
 A simple way to integrate yourself into the the basketball leagues in the areas around and in various categories gender wsie and difficulty wise
 
